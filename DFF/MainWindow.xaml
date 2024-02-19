@@ -1,0 +1,38 @@
+﻿<Window x:Class="DFF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DFF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32px" />
+            <RowDefinition />
+            <RowDefinition Height="20px" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" >
+            <TextBlock VerticalAlignment="Center">Path:</TextBlock>
+            <TextBox Width="200px" VerticalContentAlignment="Center">
+                asdasd
+            </TextBox>
+            <Button>Open</Button>
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto">
+            <TextBlock>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<LineBreak/>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<LineBreak/>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<LineBreak/>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </TextBlock>
+        </ScrollViewer>
+
+        <TextBlock Grid.Row="2" x:Name="Status">
+            TODO Status
+        </TextBlock>
+    </Grid>
+   
+</Window>
